@@ -69,7 +69,7 @@ def main():
     ds = ds.rename({'eofs': 'eof'})
     ds = ds.sel(mode=1)
     # Invert to the proper values for the bullseye.
-    if ds.sel(lat=45.5, lon=210).eof > 0:
+    if ds.sel(lat=45.5, lon=210).eof < 0:
         pass
     else:
         ds['eof'] = ds['eof'] * -1
