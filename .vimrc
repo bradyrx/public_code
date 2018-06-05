@@ -15,8 +15,16 @@ Plugin 'nvie/vim-flake8'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Plugin 'scrooloose/nerdtree'
 
+" Fortran options
+let fortran_free_source=1
+let fortran_do_enddo=1
+filetype plugin indent on
+set ruler
 
-" Make code look nice.
+" Make vim echo commands as they are being entered
+set showcmd
+
+" Make Python code look nice.
 let python_highlight_all=1
 syntax on
 
@@ -38,6 +46,7 @@ set nu
 syntax enable
 set tabstop=4
 set softtabstop=4
+set smarttab
 set expandtab
 set cursorline
 
