@@ -1,0 +1,51 @@
+# Author: Riley X. Brady
+# Email: riley.brady@colorado.edu
+# Web: rileyxbrady.com
+# Date: Sep. 6, 2017
+
+# Resource for different parameters to edit:
+# https://matplotlib.org/users/customizing.html#customizing-with-matplotlibrc-files
+
+# Default location to add is ~/.config/matplotlib/stylelib/
+#
+# Use in Python via:
+#
+# import matplotlib.pyplot as plt
+# plt.style.use('ocn-clim')
+
+# LINES CLASS
+lines.linewidth : 3
+lines.solid_capstyle : butt
+
+# PATCHES CLASS
+patch.linewidth : 0.5
+patch.edgecolor : black
+patch.force_edgecolor : True
+
+# AXES CLASS
+axes.prop_cycle : cycler('color', ['fbb4ae', 'b3cde3', 'ccebc5', 'decbe4', 'fed9a6', 'ffffcc'])
+axes.facecolor : white
+axes.edgecolor : None
+axes.grid : True
+axes.labelsize : x-large
+axes.linewidth : 3
+axes.titlesize : xx-large
+axes.spines.top : False
+axes.spines.right : False
+
+# GRID CLASS
+grid.linestyle : -
+grid.linewidth : 0.5
+grid.color : E6E6E6
+
+# TICKS
+xtick.major.size : 0
+xtick.minor.size : 0
+ytick.major.size : 0
+ytick.minor.size : 0
+xtick.labelsize : x-large
+ytick.labelsize : x-large
+
+# LEGEND
+legend.fancybox : True
+legend.facecolor : white
